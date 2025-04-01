@@ -1,0 +1,57 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Home - Portfolio{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm <b>Vishal Patidar</b>, a results-driven <span class="highlight">Software Developer</span> with 1+ years of experience in backend development.  
+        Specializing in Python Django, Ruby on Rails, and MySQL Database, I am passionate about building scalable, high-performance applications that solve real-world problems.  
+        My expertise extends to REST API development, database optimization, ensuring efficiency and seamless user experiences.  
+        I thrive in collaborative, problem-solving environments and continuously adapt to emerging technologies to drive innovation.</p>
+        <a href="/about/" class="btn-learn-more">
+            <i class="fas fa-arrow-right"></i> Learn More
+        </a>
+        
+    </div>
+</section>
+
+<section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Shop Management System</h3>
+                <p>Developed a secure and responsive shop management portal with user authentication and role-based access.</p>
+                <p>Implemented product management features, billing, and checkout systems.</p>
+                <p>Built robust cart, billing, and checkout systems for seamless user experience.</p>
+                <p>Utilized PostgreSQL for data visualization and optimized database queries.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Vaccine System</h3>
+                <p>Designed a scalable and user-friendly vaccine management system using Django to streamline vaccination processes.</p>
+                <p>Implemented role-based access control for administrators, healthcare providers, and patients.</p>
+                <p>Integrated automated notifications for appointment reminders and updates, enhancing communication with parents.</p>
+                <p>Utilized MySQL for data visualization in tabular format, ensuring easy interpretation and analysis.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Blood Donation System</h3>
+                <p>Developed a comprehensive blood donation management system using Django to streamline donor and recipient processes.</p>
+                <p>Implemented secure role-based access for donors, recipients, and administrators with encrypted data storage for privacy compliance.</p>
+                <p>Designed modules for donor registration, real-time inventory tracking, donation requests, and location-based blood drives.</p>
+                <p>Utilized MySQL for data visualization and conducted thorough testing to ensure data accuracy and reliability.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
