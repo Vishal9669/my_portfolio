@@ -1,23 +1,34 @@
 {% extends 'main/base.html' %}  
-
 {% load static %}
 
 {% block title %}About - Portfolio{% endblock %}
 
 {% block content %}
-<section class="about">
-    <div class="about-container">
-        <div class="about-img">
-            <img src="{% static 'images/profile.jpg' %}" alt="My Photo">
+
+<section class="py-16 bg-gradient-to-r from-blue-500 to-indigo-600 text-white mt-16">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+
+        <div class="md:w-1/3 flex justify-center mb-6 md:mb-0">
+            <img src="{% static 'images/profile.jpg' %}" alt="My Photo" 
+                 class="w-64 h-64 rounded-full shadow-2xl border-4 border-white transform hover:scale-105 transition-all duration-500">
         </div>
-        <div class="about-text">
-            <h1>About Me</h1>
-            <p>Hi, I'm <b>Vishal Patidar</b>, a passionate Python Django Developer with a strong foundation in backend development.</p>
-            <p>I specialize in building scalable web applications using Django and MySQL Database.</p>
-            <a href="{% static 'files/Vishal_Patidar_Resume.pdf' %}" class="btn-resume" download>
+
+        <div class="md:w-2/3 text-center md:text-left md:ml-12">
+            <h1 class="text-4xl font-extrabold text-white mb-4">About Me</h1>
+            <p class="mt-4 text-lg text-gray-100 leading-relaxed">
+                Hi, I'm <b>Vishal Patidar</b>, a passionate <span class="text-yellow-300 font-semibold">Python Django Developer</span> with a strong foundation in backend development.
+            </p>
+            <p class="mt-4 text-lg text-gray-100 leading-relaxed">
+                I specialize in building scalable web applications using <span class="text-yellow-300 font-semibold">Django</span> and <span class="text-yellow-300 font-semibold">MySQL Database</span>.
+            </p>
+
+            <a href="{% static 'files/Vishal_Patidar_Resume.pdf' %}" 
+               class="mt-6 inline-block bg-yellow-300 text-gray-800 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-yellow-400 transition-all duration-300"
+               download>
                 <i class="fas fa-file-download"></i> Download Resume
-            </a>            
+            </a>
         </div>
+
     </div>
 </section>
 {% endblock %}

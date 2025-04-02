@@ -4,54 +4,66 @@
 {% block title %}Home - Portfolio{% endblock %}
 
 {% block content %}
-<section class="hero">
-    <div class="hero-content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm <b>Vishal Patidar</b>, a results-driven <span class="highlight">Software Developer</span> with 1+ years of experience in backend development.  
-        Specializing in Python Django, Ruby on Rails, and MySQL Database, I am passionate about building scalable, high-performance applications that solve real-world problems.  
-        My expertise extends to REST API development, database optimization, ensuring efficiency and seamless user experiences.  
-        I thrive in collaborative, problem-solving environments and continuously adapt to emerging technologies to drive innovation.</p>
-        <a href="/about/" class="btn-learn-more">
+
+<section class="flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-400 to-indigo-500 text-white px-6 py-16 mt-16">
+    <div class="max-w-3xl">
+        <h1 class="text-4xl sm:text-5xl font-extrabold">Welcome to My Portfolio</h1>
+        <p class="mt-4 text-lg sm:text-xl leading-relaxed">
+            Hi, I'm <b>Vishal Patidar</b>, a results-driven  
+            <span class="font-semibold text-yellow-300">Software Developer</span> with 1+ years of experience in web development.
+        </p>
+        <p class="mt-4 text-lg sm:text-xl leading-relaxed">
+            Specializing in <b>Python Django, Ruby on Rails, AI/ML and MySQL Database</b>, I build high-performance applications that solve real-world problems.
+        </p>
+        <a href="/about/" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 ease-in-out">
             <i class="fas fa-arrow-right"></i> Learn More
         </a>
-        
     </div>
 </section>
 
-<section class="projects">
-    <h2>My Projects</h2>
-    <div class="project-list">
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-gray-800">My Projects</h2>
+        <p class="text-gray-600 mt-2">Here are some of my best projects built with Django and MySQL.</p>
 
-        <div class="card">
-            <div class="card-content">
-                <h3>Shop Management System</h3>
-                <p>Developed a secure and responsive shop management portal with user authentication and role-based access.</p>
-                <p>Implemented product management features, billing, and checkout systems.</p>
-                <p>Built robust cart, billing, and checkout systems for seamless user experience.</p>
-                <p>Utilized PostgreSQL for data visualization and optimized database queries.</p>
+        <div class="grid md:grid-cols-3 gap-8 mt-10">
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all">
+                <h3 class="text-2xl font-bold text-blue-600">Shop Management System</h3>
+                <p class="mt-2 text-gray-700">A secure and responsive shop management portal with user authentication and role-based access.</p>
+                <p class="text-gray-700">Implemented product management features, billing, and checkout systems.</p>
+                <p class="text-gray-700">Built robust cart, billing, and checkout modules for seamless user experience.</p>
+                <p class="text-gray-700">Utilized PostgreSQL for optimized database queries.</p>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-content">
-                <h3>Vaccine System</h3>
-                <p>Designed a scalable and user-friendly vaccine management system using Django to streamline vaccination processes.</p>
-                <p>Implemented role-based access control for administrators, healthcare providers, and patients.</p>
-                <p>Integrated automated notifications for appointment reminders and updates, enhancing communication with parents.</p>
-                <p>Utilized MySQL for data visualization in tabular format, ensuring easy interpretation and analysis.</p>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all">
+                <h3 class="text-2xl font-bold text-blue-600">Vaccine Management System</h3>
+                <p class="mt-2 text-gray-700">Designed a scalable and user-friendly vaccine system to streamline the vaccination process.</p>
+                <p class="text-gray-700">Implemented role-based access for admins, healthcare providers, and patients.</p>
+                <p class="text-gray-700">Integrated automated notifications for appointment reminders.</p>
+                <p class="text-gray-700">Utilized MySQL for structured data visualization.</p>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-content">
-                <h3>Blood Donation System</h3>
-                <p>Developed a comprehensive blood donation management system using Django to streamline donor and recipient processes.</p>
-                <p>Implemented secure role-based access for donors, recipients, and administrators with encrypted data storage for privacy compliance.</p>
-                <p>Designed modules for donor registration, real-time inventory tracking, donation requests, and location-based blood drives.</p>
-                <p>Utilized MySQL for data visualization and conducted thorough testing to ensure data accuracy and reliability.</p>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all">
+                <h3 class="text-2xl font-bold text-blue-600">Blood Donation System</h3>
+                <p class="mt-2 text-gray-700">A comprehensive blood donation system for donors and recipients.</p>
+                <p class="text-gray-700">Implemented secure role-based access with encrypted data storage.</p>
+                <p class="text-gray-700">Real-time inventory tracking and location-based blood drives.</p>
+                <p class="text-gray-700">Utilized MySQL for accurate data processing.</p>
             </div>
-        </div>
 
+        </div>
     </div>
 </section>
+
+<section class="py-16 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold">Want to Work Together?</h2>
+        <p class="mt-2">Let's build something amazing! Feel free to contact me.</p>
+        <a href="/contact/" class="mt-6 inline-block bg-white text-blue-600 font-semibold hover:bg-gray-100 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:bg-gray-200 transition-all">
+            Contact Me
+        </a>
+    </div>
+</section>
+
 {% endblock %}
